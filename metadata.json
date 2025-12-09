@@ -1,0 +1,5 @@
+{
+  "name": "VizFlow AI",
+  "description": "A visual work management application powered by Gemini. Features Kanban boards, data visualization dashboards, and AI-driven task breakdown and summarization.",
+  "requestFramePermissions": []
+}
