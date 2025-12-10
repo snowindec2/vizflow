@@ -2,7 +2,8 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { Priority, Task, TaskStatus } from "../types";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
+const ai = new GoogleGenAI({ apiKey });
 
 /**
  * Analyzes a task title/description and returns suggested subtasks, priority, and tags.
